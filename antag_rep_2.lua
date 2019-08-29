@@ -18,7 +18,8 @@ local player_halflife = 0.34 -- What % of players leave per round
 local low_round_time = 40 -- Lowest amount of time a round can take
 local high_round_time = 115 -- Highest amount of time a round can take
 
-local max_rounds = 1000 -- Number of rounds to simulate
+local max_rounds = 1000 -- Number of rounds to simulate per Yogstation
+local maxbouts = 1000 -- Number of Yogstations to simulate
 
 --Globals
 local player_pool = {}; -- How many tickets these players have at the moment
@@ -149,7 +150,7 @@ end
 local archive = {}
 local archive2 = {}
 local archive3 = {}
-local maxbouts = 1000
+
 for bouts=1,maxbouts do
 	local pop = 20
 	for roundnum=1,max_rounds do
